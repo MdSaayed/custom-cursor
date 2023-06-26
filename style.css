@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: #1b1b1f;
+    cursor: none;
+}
+.cusor-dot{
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+}
+.cursor-outline{
+    width: 30px;
+    height: 30px;
+    border: 2px solid hsla(0,0%,100%,0.5);
+}
+.cusor-dot, .cursor-outline{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+/* Styles for the navigation bar */
+.navbar {
+  background-color: #333;
+  cursor: none;
+}
+
+/* Navbar list */
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Navbar list items */
+.navbar li {
+  margin-right: 10px;
+}
+
+/* Navbar links */
+.navbar a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+/* Navbar links on mouse hover */
+.navbar a:hover {
+  font-weight: 800;
+  cursor: none; /* Add this line to set the cursor to none */
+}
+
+/* Add a media query for responsive behavior */
+@media screen and (max-width: 600px) {
+  .navbar {
+    overflow: hidden;
+  }
+  
+  .navbar ul {
+    flex-direction: column;
+  }
+  
+  .navbar li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+
+
